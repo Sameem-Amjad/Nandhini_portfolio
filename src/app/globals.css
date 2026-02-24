@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* app/globals.css */
+@font-face {
+    font-family: 'Shopify Sans';
+    src: url('/fonts/ShopifySans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Shopify Sans', sans-serif;
+}

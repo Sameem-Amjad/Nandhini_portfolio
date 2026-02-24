@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
-// apply {inter.className} to your body tag
+import { shopifySans } from '@/app/font'
 
 export const metadata: Metadata = {
   title: "Cristopher",
@@ -17,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased`}
+        className={shopifySans.variable}
       >
         {children}
       </body>

@@ -153,11 +153,11 @@ export default function App() {
                   </div>
                   <div className="flex-1 flex flex-col gap-2">
                     {[
-                      { percent: '96%', count: 145 },
-                      { percent: '3%', count: 5 },
+                      { percent: '100%', count: 186 },
                       { percent: '0%', count: 0 },
                       { percent: '0%', count: 0 },
-                      { percent: '1%', count: 1 },
+                      { percent: '0%', count: 0 },
+                      { percent: '0%', count: 0 },
                     ].map((row, idx) => (
                       <div key={idx} className="flex items-center gap-3 h-5">
                         <div className="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">

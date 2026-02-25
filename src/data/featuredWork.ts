@@ -1,22 +1,22 @@
 export const FEATURED_WORK = [
     {
-        title: "Bleacher Report: Website Setup & Ongoing Optimization",
-        desc: "Establish updated ecommerce presence for bleacherreportshop.com by customizing various visual and functional elements on a new Shopify theme. Solved the unique challenge of presenting sold out content and various collections in an easy-to-navigate way."
+        title: "Beauty, Bath & Body - Elevate Your Brand's Glow",
+        desc: "With years of experience in the beauty industry, we understand what it takes to create a Shopify store that captures the essence of your brand.From luxurious product displays to optimized mobile shopping, we ensure a flawless customer experience that enhances brand loyalty and sales.",
     },
     {
-        title: "Mariano Rivera: Website Build",
-        desc: "Created website for Mariano Rivera, Major League Baseball's all-time Saves leader, 5x World Series champion and only unanimous inductee in the history of the National Baseball Hall of Fame."
+        title: "Fashion - Stylish Stores That Convert",
+        desc: "In the fast-paced world of fashion, presentation is everything.We create Shopify stores that balance aesthetics and functionality, offering streamlined category layouts, dynamic product filters, and engaging lookbooks that help customers find and fall in love with your designs."
     },
     {
-        title: "Gleyber Torres: Website Build",
-        desc: "Created gleybertorres25.com for the current starting shortstop of the New York Yankees."
+        title: "Jewelry & Accessories - Shine Online",
+        desc: "Jewelry and accessories deserve a Shopify store that's as elegant as the pieces themselves. We create sleek, visually stunning layouts with high-quality image displays, detailed product descriptions, and effortless navigation—helping customers fall in love with your collection at first glance."
     },
     {
-        title: "Mythical: Strategic Audit and Conversion Rate Optimization",
-        desc: "Worked with the Mythical team to develop a comprehensive strategy for making various improvements to the setup and marketing of mythical.com."
+        title: "Art & Photography - Showcase Creativity with Style",
+        desc: "Artists and photographers need more than just an online store—they need a gallery-worthy experience. We build Shopify sites that beautifully showcase your work with high-resolution image displays, custom portfolio layouts, and effortless purchasing options that make it easy for customers to buy your art."
     },
     {
-        title: "MoviePosters.com: Visual and Functional Customizations",
-        desc: "Update website search and navigation along with the customization of various functional elements of product display pages and collection filtering."
-    }
+        title: "⭐⭐⭐Shopify Plus Redesign + SEO | $250K+ Sales in First Month Case⭐⭐⭐",
+        desc: "We redesigned the Oliver Sweeney Shopify Plus store with a focus on speed, performance, and scalability. The new site features a clean design, intuitive navigation, and a smoother checkout experience. After launch, the store achieved a 21% increase in sales, a 46% boost in conversion rate, and generated $250K+ in its first month, compared to $100K-$120K in monthly revenue before the redesign."
+    },
 ];

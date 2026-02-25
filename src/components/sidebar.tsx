@@ -48,7 +48,7 @@ const Sidebar = () => (
         </div>
 
         {/* Contact Button */}
-        <button className="w-full bg-[#2e3e48] text-white font-semibold hover:bg-gray-200 border border-gray-300  py-3 px-6 rounded-full mb-6 flex justify-start items-start  gap-2 transition-colors">
+        <button className="w-full bg-[#2e3e48] text-white font-semibold hover:bg-gray-200 border border-gray-300 hover:text-gray-800 py-3 px-6 rounded-full mb-6 flex justify-start items-start  gap-2 transition-colors">
             Contact
         </button>
 

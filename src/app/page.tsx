@@ -11,13 +11,15 @@ import {
   ChevronRight,
   X,
   Plus,
-  Minus
+  Minus,
+  Facebook,
+  Youtube
 } from 'lucide-react';
 import Header from '@/components/header';
 import Sidebar from '@/components/sidebar';
 import AccordionItem from '@/components/accordianItems';
 import ReviewItem from '@/components/reviewItem';
-import { FooterList } from '@/components/footer';
+import FooterList from '@/components/footer';
 
 const REVIEWS_PER_PAGE = 5;
 
@@ -153,11 +155,11 @@ export default function App() {
                   </div>
                   <div className="flex-1 flex flex-col gap-2">
                     {[
-                      { percent: '100%', count: 186 },
-                      { percent: '0%', count: 0 },
-                      { percent: '0%', count: 0 },
-                      { percent: '0%', count: 0 },
-                      { percent: '0%', count: 0 },
+                      { percent: '90.32%', count: 168 },
+                      { percent: '5.38%', count: 10 },
+                      { percent: '2.69%', count: 5 },
+                      { percent: '1.08%', count: 2 },
+                      { percent: '0.54%', count: 1 },
                     ].map((row, idx) => (
                       <div key={idx} className="flex items-center gap-3 h-5">
                         <div className="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
@@ -270,54 +272,91 @@ export default function App() {
                 <Image src="https://cdn.shopify.com/b/shopify-brochure2-assets/88ee7022e2749387148cb4098cc4f9fb.svg" alt="Shopify Logo" width={40} height={32} />
               </div>
             </div>
-            <div className='lg:col-span-4  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8  rounded-lg'>
+            <div className='lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 rounded-lg'>
+
               <FooterList
                 title="Shopify"
-                links={['About', 'Careers', 'Investors', 'Press and Media', 'Partners', 'Affiliates', 'Legal', 'Service Status']}
+                links={[
+                  { label: "About", link: "https://www.shopify.com/pk/about" },
+                  { label: "Investors", link: "https://www.shopify.com/investors" },
+                  { label: "Partners", link: "https://www.shopify.com/pk/partners" },
+                  { label: "Affiliates", link: "https://www.shopify.com/pk/affiliates" },
+                  { label: "Legal", link: "https://www.shopify.com/pk/legal" },
+                  { label: "Service Status", link: "https://www.shopifystatus.com/" }
+                ]}
               />
+
               <FooterList
                 title="Support"
-                links={['Merchant Support', 'Shopify Help Center', 'Hire a Partner', 'Shopify Academy', 'Shopify Community']}
+                links={[
+                  { label: "Merchant Support", link: "https://help.shopify.com/en/questions" },
+                  { label: "Shopify Help Center", link: "https://help.shopify.com/en/" },
+                  { label: "Hire a Partner", link: "https://www.shopify.com/partners/directory" },
+                  { label: "Shopify Academy", link: "https://www.shopifyacademy.com/" },
+                  { label: "Shopify Community", link: "https://community.shopify.com/" }
+                ]}
               />
+
               <FooterList
                 title="Developers"
-                links={['Shopify.dev', 'API Documentation', 'Dev Degree']}
+                links={[
+                  { label: "Shopify.dev", link: "https://shopify.dev" },
+                  { label: "API Documentation", link: "https://shopify.dev/api" },
+                  { label: "Dev Degree", link: "https://devdegree.ca" }
+                ]}
               />
+
               <FooterList
                 title="Products"
-                links={['Shop', 'Shop Pay', 'Shopify Plus', 'Shopify Fulfillment Network', 'Shopify for Enterprise']}
+                links={[
+                  { label: "Shop", link: "https://shop.app" },
+                  { label: "Shop Pay", link: "https://www.shopify.com/pk/shop-pay" },
+                  { label: "Shopify for Enterprise", link: "https://www.shopify.com/pk/enterprise" }
+                ]}
               />
+
               <FooterList
                 title="Global Impact"
-                links={['Sustainability', 'Build Black', 'Accessibility', 'Research']}
+                links={[
+                  { label: "Sustainability", link: "https://www.shopify.com/pk/climate" },
+                  { label: "Build Black", link: "https://operationhope.org/initiatives/1-million-black-businesses/" }
+                ]}
               />
+
               <FooterList
                 title="Solutions"
-                links={['Online Store Builder', 'Website Builder', 'Ecommerce Website']}
+                links={[
+                  { label: "Online Store Builder", link: "https://www.shopify.com/pk/online" },
+                  { label: "Website Builder", link: "https://www.shopify.com/pk/website/builder" },
+                  { label: "Ecommerce Website", link: "https://www.shopify.com/pk/tour/ecommerce-website" }
+                ]}
               />
+
             </div>
 
 
           </div>
 
-          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-300">
-            <div className="flex items-center gap-2 hover:text-white cursor-pointer order-2 md:order-1">
+          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-gray-300 text-lg">
+            <div className="flex items-center gap-2 hover:text-white cursor-pointer order-2 md:order-1 ">
               <Globe className="w-4 h-4" />
               <span className="font-medium">USA | English</span>
               <ChevronDown className="w-3 h-3" />
             </div>
 
             <div className="flex flex-wrap gap-6 items-center order-1 md:order-2">
-              <a href="#" className="hover:underline">Terms of Service</a>
-              <a href="#" className="hover:underline">Privacy Policy</a>
-              <a href="#" className="hover:underline">Sitemap</a>
-              <a href="#" className="hover:underline flex items-center gap-1">Your Privacy Choices</a>
+              <a href="https://www.shopify.com/" className="hover:underline">Terms of Service</a>
+              <a href="https://www.shopify.com/legal/privacy" className="hover:underline">Privacy Policy</a>
+              <a href="https://www.shopify.com/legal/privacy" className="hover:underline">Sitemap</a>
+              <a href="https://www.shopify.com/legal/privacy" className="hover:underline flex items-center gap-1">Your Privacy Choices <Image src="https://cdn.shopify.com/b/shopify-brochure2-assets/8051dee1dd72e78a9528a16c062cff66.svg" alt="" width={30} height={10} /></a>
             </div>
 
-            <div className="flex items-center gap-5 order-3">
-              <a href="#" className="hover:text-white transition-colors"><Twitter className="w-5 h-5 fill-current" /></a>
-              <a href="#" className="hover:text-white transition-colors"><Linkedin className="w-5 h-5 fill-current" /></a>
-              <a href="#" className="hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
+            <div className="flex items-center gap-8 order-3">
+              <a href="https://www.facebook.com/shopify" className="hover:text-white transition-colors p-2 bg-white rounded-full"><Facebook className="w-5 h-5 fill-transparent text-black" /></a>
+              <a href="https://twitter.com/shopify" className="hover:text-white transition-colors  p-2 bg-white rounded-full"><Twitter className="w-5 h-5 fill-transparent text-black" /></a>
+              <a href="https://www.youtube.com/user/shopify" className="hover:text-white transition-colors  p-2 bg-white rounded-full"><Youtube className="w-5 h-5 fill-transparent text-black" /></a>
+              <a href="https://www.instagram.com/shopify/" className="hover:text-white transition-colors p-2 bg-white rounded-full"><Instagram className="w-5 h-5 fill-transparent text-black" /></a>
+              <a href="https://www.linkedin.com/company/shopify" className="hover:text-white transition-colors p-2 bg-white rounded-full"><Linkedin className="w-5 h-5 fill-transparent text-black" /></a>
             </div>
           </div>
 

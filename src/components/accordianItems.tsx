@@ -25,7 +25,7 @@ const AccordionItem = ({ title, price, description }: AccordionItemProps) => {
             </button>
             {isOpen && (
                 <div className="pb-4 pr-8 text-gray-600 text-base">
-                    <p className="mb-2 text-sm text-gray-500">Starting at {price}</p>
+                    <p className="mb-2 text-sm text-gray-500">Contact for pricing</p>
                     <p className="leading-relaxed">Description: {description}</p>
                 </div>
             )}

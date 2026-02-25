@@ -1,5 +1,6 @@
-import { Star, Globe, Phone, Mail, Linkedin, Twitter, Instagram } from "lucide-react";
-
+import Image from "next/image";
+import { Star, Globe, Phone, Mail, Linkedin, Twitter, Instagram, Facebook } from "lucide-react";
+import logo from "@/assets/logo.png";
 const Sidebar = () => (
     <div className="bg-white rounded-lg border-2 border-gray-200  md:shadow-md md:p-6 flex flex-col w-full relative">
         {/* Profile Header */}
@@ -16,13 +17,14 @@ const Sidebar = () => (
 
             {/* Profile Image (Floating) */}
             <div className="w-20 h-20 md:w-40 md:h-40 rounded-full overflow-hidden border border-gray-200 bg-gray-100 shrink-0 md:absolute md:-top-20 md:left-6 shadow-md z-10">
-                <div className="w-full h-full bg-[#1a2b3c] flex items-center justify-center text-white text-4xl font-bold">
+                {/* <div className="w-full h-full bg-[#1a2b3c] flex items-center justify-center text-white text-4xl font-bold">
                     DW
-                </div>
+                </div> */}
+                <Image src={logo} alt="Profile Image" className="w-full" />
             </div>
 
             <div className="md:mt-24 w-full">
-                <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Dray Workx</h1>
+                <h1 className="text-3xl font-bold text-gray-900 tracking-tight">QUNSTACK</h1>
                 <div className="inline-block mt-2 border rounded-full py-1 px-3 font-medium text-xs border-gray-400 text-gray-700">
                     Service partner
                 </div>
@@ -35,12 +37,12 @@ const Sidebar = () => (
                 <div className="flex items-center gap-1">
                     <Star className="w-5 h-5 fill-[#F5C452] text-[#F5C452]" />
                     <span className="font-bold text-base">5.0</span>
-                    <span className="text-gray-500 text-base">(175)</span>
+                    <span className="text-gray-500 text-base">(186)</span>
                 </div>
                 <span className="mx-2 text-gray-300">|</span>
                 <div className="flex items-center gap-1.5 text-gray-500">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 9C12.2091 9 14 7.20914 14 5C14 2.79086 12.2091 1 10 1C7.79086 1 6 2.79086 6 5C6 7.20914 7.79086 9 10 9Z" fill="#87909B"></path><path d="M2 16C2 17.6569 3.34315 19 5 19H15C16.6569 19 18 17.6569 18 16C18 14.3431 16.5 11 10 11C3.5 11 2 14.3431 2 16Z" fill="#87909B"></path></svg>
-                    <span>Partner since January 2015</span>
+                    <span>Partner since November 2020</span>
                 </div>
             </div>
         </div>
@@ -66,13 +68,13 @@ const Sidebar = () => (
                 <h3 className="text-gray-500 font-medium mb-2">Contact information</h3>
                 <div className="flex flex-col gap-3">
                     <a href="#" className="flex items-center gap-2 text-blue-600 hover:underline">
-                        <Globe className="w-5 h-5 text-gray-400" /> drayagency.drayworkx.com
+                        <Globe className="w-5 h-5 text-gray-400" /> https://qunstack.com/
                     </a>
                     <a href="#" className="flex items-center gap-2 text-blue-600 hover:underline">
-                        <Phone className="w-5 h-5 text-gray-400" /> +17055309648
+                        <Phone className="w-5 h-5 text-gray-400" /> +13658291734
                     </a>
                     <a href="#" className="flex items-center gap-2 text-blue-600 hover:underline">
-                        <Mail className="w-5 h-5 text-gray-400" /> info@drayworkx.com
+                        <Mail className="w-5 h-5 text-gray-400" /> info@qunstack.com
                     </a>
                 </div>
             </div>
@@ -80,9 +82,9 @@ const Sidebar = () => (
             <div>
                 <h3 className="text-gray-500 font-medium mb-2">Social links</h3>
                 <div className="flex items-center gap-3 text-gray-400">
-                    <a href="#" className="hover:text-gray-600 transition-colors"><Linkedin className="w-6 h-6" /></a>
-                    <a href="#" className="hover:text-gray-600 transition-colors"><Twitter className="w-6 h-6" /></a>
-                    <a href="#" className="hover:text-gray-600 transition-colors"><Instagram className="w-6 h-6" /></a>
+                    <a href="https://web.facebook.com/QunsTack" className="hover:text-gray-600 transition-colors"><Facebook className="w-6 h-6" /></a>
+                    <a href="https://www.linkedin.com/company/qunstack/" className="hover:text-gray-600 transition-colors"><Linkedin className="w-6 h-6" /></a>
+                    <a href="https://www.instagram.com/qunstack" className="hover:text-gray-600 transition-colors"><Instagram className="w-6 h-6" /></a>
                 </div>
             </div>
 

@@ -18,7 +18,7 @@ const Header = () => {
     }, [isMobileMenuOpen]);
 
     return <>
-        <header className="bg-gray-100 py-2 pb-4 sticky top-0 z-50 ">
+        <header className="bg-gray-100 py-1 pb-4 sticky top-0 z-50 ">
             {/* Main Top Bar */}
             <div className="max-w-7xl mx-auto px-4 lg:px-20 h-16 flex items-center justify-between gap-4">
                 {/* Logo Area */}
@@ -27,7 +27,7 @@ const Header = () => {
                         {/* <div className="w-6 h-6 bg-[#008060] rounded-sm flex items-center justify-center text-white text-xs">S</div> */}
                         {/* <span className="text-black">shopify</span>
             <span className="text-gray-500 font-normal">Partners</span> */}
-                        <Image src="https://cdn.shopify.com/b/shopify-brochure2-assets/08b278c519512d187520e1fe10b4f5b7.svg" alt="Shopify Partners" width={200} height={50} className="object-contain" />
+                        <Image src="https://cdn.shopify.com/b/shopify-brochure2-assets/08b278c519512d187520e1fe10b4f5b7.svg" alt="Shopify Partners" width={169} height={28} className="object-contain" />
                     </div>
                     <button
                         className="lg:hidden text-gray-800 hover:bg-gray-100 p-1 rounded-md transition-colors"
@@ -57,13 +57,13 @@ const Header = () => {
             </div>
 
             {/* Secondary Navigation Bar (Browse, Services, Locations) */}
-            <div className="hidden lg:flex px-4 pt-5 lg:px-16  border-gray-200 bg-gray-100 h-14">
+            <div className="hidden  lg:flex px-4 pt-5 lg:px-16  border-gray-200 bg-gray-100 h-14">
                 <div className="max-w-7xl mx-auto px-4 w-full flex items-center">
                     <nav className="flex items-center gap-x-8 h-full w-full relative">
 
                         {/* Browse Dropdown */}
                         <div className="relative group h-full flex items-center">
-                            <button className="flex items-center text-black font-medium h-full border-b-[3px] border-transparent group-hover:border-black transition-colors">
+                            <button className="flex items-center text-base tracking-wide text-[#162120] font-medium h-full border-b-[3px] border-transparent group-hover:border-black transition-colors">
                                 Browse <ChevronDown className="w-4 h-4 ml-1" />
                             </button>
                             <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-lg rounded-lg py-2 w-72 hidden group-hover:block transition-opacity opacity-0 group-hover:opacity-100 z-50">
@@ -80,7 +80,7 @@ const Header = () => {
 
                         {/* Services Dropdown (with nested menus) */}
                         <div className="relative group h-full flex items-center">
-                            <button className="flex items-center text-black font-medium h-full border-b-[3px] border-transparent group-hover:border-black transition-colors">
+                            <button className="flex items-center text-base tracking-wide text-[#162120] font-medium h-full border-b-[3px] border-transparent group-hover:border-black transition-colors">
                                 Services <ChevronDown className="w-4 h-4 ml-1" />
                             </button>
                             <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-lg rounded-lg py-2 w-72 hidden group-hover:block transition-opacity opacity-0 group-hover:opacity-100 z-50">

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Cristopher",
   description: "Generated For Christopher",
   icons: {
-    icon: "https://cdn.shopify.com/b/shopify-brochure2-assets/88ee7022e2749387148cb4098cc4f9fb.svg",
+    icon: "https://img.icons8.com/color/1200/shopify.jpg"
   },
 };
 

@@ -15,7 +15,7 @@ const AccordionItem = ({ title, price, description }: AccordionItemProps) => {
                 className="w-full py-4 flex items-center justify-between text-left focus:outline-none group"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <span className="font-bold text-gray-900 text-base">{title}</span>
+                <span className="font-bold text-lg text-gray-900 ">{title}</span>
                 <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-colors ${isOpen ? 'bg-gray-800' : 'bg-gray-800'}`}>
                     {isOpen
                         ? <Minus width={18} className=" text-white" />

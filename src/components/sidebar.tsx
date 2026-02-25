@@ -58,10 +58,10 @@ const Sidebar = () => (
         <div className="space-y-6 text-sm">
             <div>
                 <h3 className="text-gray-500 font-medium mb-1">Price range for selected services</h3>
-                {/* <p className="text-gray-900 font-medium">Starting from $500</p> */}
-                <button className="px-4 py-2 text-gray-100 bg-gray-800 rounded-full text-sm font-medium hover:bg-gray-200 hover:text-gray-800 transition-colors">
+                <p className="text-gray-900 font-medium opacity-90">Contact For Pricing</p>
+                {/* <button className="px-4 py-2 text-gray-100 bg-gray-800 rounded-full text-sm font-medium hover:bg-gray-200 hover:text-gray-800 transition-colors">
                     <a href="http://" target="_blank" rel="noopener noreferrer">Contact For Pricing</a>
-                </button>
+                </button> */}
             </div>
 
             <div>

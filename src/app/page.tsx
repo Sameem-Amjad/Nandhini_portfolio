@@ -134,7 +134,7 @@ export default function App() {
                 <h2 className="text-2xl font-medium flex items-center mb-4">
                   Rating
                   <Star className="w-5 h-5 fill-[#F5C452] text-[#F5C452] ml-3 mr-1" />
-                  <span className="font-normal text-xl">5.0 <span className="text-gray-500">(151)</span></span>
+                  <span className="font-normal text-xl">5.0 <span className="text-gray-500">(186)</span></span>
                 </h2>
 
                 <h3 className="font-bold text-sm mb-2">Overall rating summary</h3>

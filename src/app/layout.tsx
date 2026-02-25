@@ -6,7 +6,8 @@ export const metadata: Metadata = {
   title: "Qunstack - Shopify Expert Agency | Premier Partner",
   description: "Generated For Christopher",
   icons: {
-    icon: "https://img.icons8.com/color/48/shopify.png"
+    icon: "https://img.icons8.com/color/90/shopify.png",
+
   },
 };
 

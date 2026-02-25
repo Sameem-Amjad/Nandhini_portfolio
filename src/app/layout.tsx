@@ -3,10 +3,10 @@ import "./globals.css";
 import { shopifySans } from '@/app/font'
 
 export const metadata: Metadata = {
-  title: "Cristopher",
+  title: "Qunstack - Shopify Expert Agency | Premier Partner",
   description: "Generated For Christopher",
   icons: {
-    icon: "https://img.icons8.com/color/1200/shopify.jpg"
+    icon: "https://cdn.shopify.com/b/shopify-brochure2-assets/88ee7022e2749387148cb4098cc4f9fb.svg"
   },
 };
 

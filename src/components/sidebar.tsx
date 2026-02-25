@@ -90,7 +90,7 @@ const Sidebar = () => (
 
             <div>
                 <h3 className="text-gray-500 font-medium mb-1">Primary location</h3>
-                <p className="text-gray-900">Franklin Lakes, United States</p>
+                <p className="text-gray-900">California, United States</p>
             </div>
 
             <div>

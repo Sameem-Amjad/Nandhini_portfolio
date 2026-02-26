@@ -44,16 +44,15 @@ export default function App() {
     <div className="min-h-screen  bg-white font-sans text-gray-900 " style={{ fontFamily: 'ShopifySans, Helvetica, Arial, sans-serif' }}>
       <Header />
 
-      <main className="max-w-7xl px-4 mt-20 lg:px-20 mx-auto  pb-16 pt-8 md:pt-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-16 gap-y-8 items-start">
-
+      <main className=" mt-16 lg:px-[90px] mx-auto  pb-16 pt-4 md:pt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12  gap-x-16 gap-y-8 items-start">
           {/* Left Sidebar Layout */}
           <div className="lg:col-span-5 xl:col-span-5 ">
             <Sidebar />
           </div>
 
           {/* Right Main Content */}
-          <div className="lg:col-span-6 xl:col-span-6 md:pt-4">
+          <div className="lg:col-span-6 xl:col-span-7 md:pt-4">
 
             {/* About Section */}
             <section className="mb-12">
@@ -261,7 +260,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#000000] text-white pt-16 pb-8 lg:px-20 px-4">
+      <footer className="bg-[#000000] text-white pt-16 pb-8 lg:px-[90px] px-4">
         <div className="max-w-7xl mx-auto px-4">
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">

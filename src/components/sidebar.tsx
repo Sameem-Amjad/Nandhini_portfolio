@@ -24,7 +24,7 @@ const Sidebar = () => (
             </div>
 
             <div className="md:mt-24 w-full">
-                <h1 className="text-3xl font-bold text-gray-900 tracking-tight">QUNSTACK</h1>
+                <h1 className="text-3xl -mt-5 font-normal text-gray-900 tracking-tight">QUNSTACK</h1>
                 <div className="inline-block mt-2 border rounded-full py-1 px-3 font-medium text-xs border-gray-400 text-gray-700">
                     Service partner
                 </div>

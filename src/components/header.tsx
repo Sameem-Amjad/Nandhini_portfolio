@@ -12,9 +12,9 @@ const Header = () => {
     }, [isMobileMenuOpen]);
 
     return (
-        <header className="bg-gray-100 py-1 pb-4 sticky top-0 z-50 ">
+        <header className="bg-gray-100 px-[90px] h-[144px] py-1 pb-4 sticky top-0 z-50 ">
             {/* Top Bar */}
-            <div className="max-w-7xl mx-auto px-4 lg:px-20 h-16 flex items-center justify-between gap-4">
+            <div className="max-w-7xl mx-auto  h-16 flex items-center justify-between gap-8">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
                     <a href="https://www.shopify.com/pk/partners">
@@ -37,34 +37,34 @@ const Header = () => {
                 </div>
 
                 {/* Search */}
-                <div className="hidden md:flex flex-1 max-w-3xl mx-auto relative">
+                <div className="hidden md:flex flex-1 max-w-[728px]   mx-auto relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                        <Search className="h-4 w-4 text-gray-400" />
+                        <Search className="h-4 w-4 text-gray-600 mx-2 font-semibold stroke-4" />
                     </div>
                     <input
                         type="text"
-                        className="block w-full pl-10 pr-3 py-3 border border-gray-600 rounded-full leading-5 bg-gray-50 placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#008060] focus:border-transparent sm:text-sm transition duration-150 ease-in-out"
+                        className="block w-full pl-10 p-[14px] border border-gray-600 rounded-full leading-5 bg-gray-50 placeholder-gray-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#008060] placeholder:font-medium placeholder:text-base focus:border-transparent  sm:text-sm transition duration-150 ease-in-out"
                         placeholder="Search by keyword, service, partner name, or country"
                     />
                 </div>
 
                 {/* Right Actions */}
                 <div className="flex items-center gap-4">
-                    <button className="hidden sm:block text-sm font-medium bg-gray-700 text-white hover:text-gray-900 px-6 py-3 rounded-full">
+                    <button className="hidden sm:block text-base font-medium bg-gray-700 text-white hover:text-gray-900 px-6 py-[10px] rounded-full">
                         Log in
                     </button>
                 </div>
             </div>
 
             {/* Secondary Navigation */}
-            <div className="hidden lg:flex px-4 pt-5 lg:px-16 border-gray-200 bg-gray-100 h-14 ">
-                <div className="max-w-7xl mx-auto px-4 w-full flex items-center">
+            <div className="hidden lg:flex justify-start pt-5  border-gray-200 bg-gray-100 h-14 ">
+                <div className="max-w-7xl mx-auto  w-full flex items-center">
                     <nav className="flex items-center gap-x-8 h-full w-full relative">
 
                         {/* Browse */}
-                        <div className="relative group h-full flex items-center">
-                            <button className="flex items-center text-base tracking-wide text-[#162120] font-medium h-full border-b-[3px] border-transparent group-hover:border-black transition-colors">
-                                Browse <ChevronDown className="w-4 h-4 ml-1" />
+                        <div className="relative group h-full gap-2 mt-1 flex items-center">
+                            <button className="flex items-center text-base  tracking-wide text-[#162120] font-medium h-full border-b-[3px] border-transparent group-hover:border-black transition-colors">
+                                Browse <ChevronDown className="w-6 h-6 ml-2 stroke-1" />
                             </button>
                             <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-lg rounded-lg py-2 w-72 hidden group-hover:block transition-opacity opacity-0 group-hover:opacity-100 z-50">
                                 <a href="https://www.shopify.com/pk/partners/directory/services" className="block px-4 py-3 hover:bg-gray-50 hover:underline">
@@ -79,9 +79,9 @@ const Header = () => {
                         </div>
 
                         {/* Services */}
-                        <div className="relative group h-full flex items-center">
+                        <div className="relative group h-full flex mt-1 items-center">
                             <button className="flex items-center text-base tracking-wide text-[#162120] font-medium h-full border-b-[3px] border-transparent group-hover:border-black transition-colors">
-                                Services <ChevronDown className="w-4 h-4 ml-1" />
+                                Services <ChevronDown className="w-6 h-6 ml-2 stroke-1" />
                             </button>
                             <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-lg rounded-lg py-2 w-72 hidden group-hover:block transition-opacity opacity-0 group-hover:opacity-100 z-50">
                                 {/* Marketing and sales */}
@@ -125,9 +125,9 @@ const Header = () => {
                         </div>
 
                         {/* Locations */}
-                        <div className="relative group h-full flex items-center">
+                        <div className="relative group h-full flex mt-1 items-center">
                             <button className="flex items-center text-base tracking-wide text-[#162120] font-medium h-full border-b-[3px] border-transparent group-hover:border-black transition-colors">
-                                Locations <ChevronDown className="w-4 h-4 ml-1" />
+                                Locations <ChevronDown className="w-6 h-6 ml-2 stroke-1 " />
                             </button>
                             <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-lg rounded-lg py-2 w-72 hidden group-hover:block transition-opacity opacity-0 group-hover:opacity-100 z-50">
                                 <a href="https://www.shopify.com/pk/partners/directory/locations/united-states" className="block px-4 py-2 hover:bg-gray-50 hover:underline">United States</a>

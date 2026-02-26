@@ -44,15 +44,15 @@ export default function App() {
     <div className="min-h-screen  bg-white font-sans text-gray-900 " style={{ fontFamily: 'ShopifySans, Helvetica, Arial, sans-serif' }}>
       <Header />
 
-      <main className=" mt-16 lg:px-[90px] mx-auto  pb-16 pt-4 md:pt-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12  gap-x-16 gap-y-8 items-start">
+      <main className=" lg:mt-16 md:mt-16 mt-8 lg:px-[90px] mx-auto  pb-16 pt-4 md:pt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 p-4 lg:p-0 md:p-0  gap-x-16 gap-y-8 items-start">
           {/* Left Sidebar Layout */}
           <div className="lg:col-span-5 xl:col-span-5 ">
             <Sidebar />
           </div>
 
           {/* Right Main Content */}
-          <div className="lg:col-span-6 xl:col-span-7 md:pt-4">
+          <div className="lg:col-span-6 xl:col-span-7 md:pt-4 md:p-6">
 
             {/* About Section */}
             <section className="mb-12">
@@ -144,11 +144,24 @@ export default function App() {
                 </p>
 
                 {/* Rating Progress Bars */}
-                <div className="flex max-w-md">
-                  <div className="flex flex-col gap-2 w-24">
-                    {[5, 4, 3, 2, 1].map(num => (
-                      <div key={num} className="flex items-center gap-1 text-sm text-gray-500 justify-end pr-2 h-5">
-                        {num} <Star className="w-3 h-3 fill-gray-300 text-gray-300" />
+                <div className="flex max-w-md gap-5 -mt-3 items-start">
+                  <div className="flex flex-col gap-2 ">
+                    {[5, 4, 3, 2, 1].map((num) => (
+                      <div
+                        key={num}
+                        className="flex items-center gap-1   text-sm text-gray-500 justify-end pr-2 h-5"
+                      >
+                        <div className="flex gap-[2px]">
+                          {Array.from({ length: 5 }).map((_, index) => (
+                            <Star
+                              key={index}
+                              className={`w-[14px] h-[14px] ${index < num
+                                ? "fill-[#F5C452] text-[#F5C452]"   // filled
+                                : "text-gray-300"                 // empty
+                                }`}
+                            />
+                          ))}
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -271,7 +284,7 @@ export default function App() {
                 <Image src="https://cdn.shopify.com/b/shopify-brochure2-assets/88ee7022e2749387148cb4098cc4f9fb.svg" alt="Shopify Logo" width={40} height={32} />
               </div>
             </div>
-            <div className='lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 rounded-lg'>
+            <div className='lg:col-span-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 rounded-lg'>
 
               <FooterList
                 title="Shopify"

@@ -6,17 +6,28 @@ import { useState, useEffect } from "react";
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50); // adjust scroll threshold
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     useEffect(() => {
         document.body.style.overflow = isMobileMenuOpen ? "hidden" : "unset";
     }, [isMobileMenuOpen]);
 
     return (
-        <header className="bg-gray-100 px-[90px] h-[144px] py-1 pb-4 sticky top-0 z-50 ">
+        <header className={`lg:px-[90px] md:px-[90px] h-[144px] py-1 pb-4 sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "bg-transparent" : "bg-gray-100"
+            }`}>
             {/* Top Bar */}
-            <div className="max-w-7xl mx-auto  h-16 flex items-center justify-between gap-8">
+            <div className="lg:max-w-7xl md:max-w-7xl  max-w-full  mx-auto  h-16 flex items-center justify-between gap-8">
                 {/* Logo */}
-                <div className="flex items-center gap-2">
+                <div className="lg:hidden md:hidden flex  items-center ml-4 gap-2 w-full justify-between ">
                     <a href="https://www.shopify.com/pk/partners">
                         <Image
                             src="https://cdn.shopify.com/b/shopify-brochure2-assets/08b278c519512d187520e1fe10b4f5b7.svg"
@@ -28,10 +39,31 @@ const Header = () => {
                         />
                     </a>
                     <button
-                        className="lg:hidden text-gray-800 hover:bg-gray-100 p-1 rounded-md transition-colors"
+                        className="lg:hidden md:hidden flex -mr-5 items-center gap-5 text-gray-800 hover:bg-gray-100 p-1 rounded-md transition-colors"
                         onClick={() => setIsMobileMenuOpen(true)}
                         aria-label="Open mobile menu"
                     >
+                        <Search className="h-5 w-4 text-black stroke-3 mx-2 font-semibold stroke-4" />
+                        <Menu className="h-5 w-5 stroke-3 text-black " />
+                    </button>
+                </div>
+                <div className="lg:flex md:flex hidden items-center gap-2 ">
+                    <a href="https://www.shopify.com/pk/partners">
+                        <Image
+                            src="https://cdn.shopify.com/b/shopify-brochure2-assets/08b278c519512d187520e1fe10b4f5b7.svg"
+                            alt="Shopify Partners"
+
+                            width={169}
+                            height={28}
+                            className="object-contain"
+                        />
+                    </a>
+                    <button
+                        className="lg:hidden md:hidden flex bg-white items-center gap-5 text-gray-800 hover:bg-gray-100 p-1 rounded-md transition-colors"
+                        onClick={() => setIsMobileMenuOpen(true)}
+                        aria-label="Open mobile menu"
+                    >
+                        <Search className="h-4 w-4 text-gray-600 mx-2 font-semibold stroke-4" />
                         <Menu className="h-6 w-6" />
                     </button>
                 </div>
@@ -57,7 +89,7 @@ const Header = () => {
             </div>
 
             {/* Secondary Navigation */}
-            <div className="hidden lg:flex justify-start pt-5  border-gray-200 bg-gray-100 h-14 ">
+            <div className="hidden lg:flex justify-start pt-5  border-gray-200  h-14 ">
                 <div className="max-w-7xl mx-auto  w-full flex items-center">
                     <nav className="flex items-center gap-x-8 h-full w-full relative">
 

@@ -2,10 +2,10 @@ import Image from "next/image";
 import { Star, Globe, Phone, Mail, Linkedin, Twitter, Instagram, Facebook } from "lucide-react";
 import logo from "@/assets/logo.png";
 const Sidebar = () => (
-    <div className="bg-white rounded-lg border-2 border-gray-200  md:shadow-md md:p-6 flex flex-col w-full relative">
+    <div className="bg-white rounded-lg lg:border-2 md:border-2 lg:border-gray-200 md:border-gray-200 shadow-none lg:shadow-md lg:p-6  md:shadow-md md:p-6 flex flex-col w-full relative">
         {/* Profile Header */}
         <div className="flex flex-col items-start gap-4 mb-6">
-            <div className="absolute top-5 right-5 hidden md:flex items-center gap-1  text-white text-[10px] font-bold uppercase tracking-wide px-2 py-1 rounded-sm">
+            <div className="absolute lg:top-5 md:top-5  right-5  md:flex items-center gap-1  text-white text-[10px] font-bold uppercase tracking-wide px-2 py-1 rounded-sm">
                 {/* <Star className="w-3 h-3 fill-white" />
         Premier tier */}
                 <svg xmlns="http://www.w3.org/2000/svg" width="101" height="46" fill="none" role="img" aria-describedby="premier-badge-title">
@@ -16,7 +16,7 @@ const Sidebar = () => (
             </div>
 
             {/* Profile Image (Floating) */}
-            <div className="w-20 h-20 md:w-40 md:h-40 rounded-full overflow-hidden border border-gray-200 bg-gray-100 shrink-0 md:absolute md:-top-20 md:left-6 shadow-md z-10">
+            <div className="w-20 h-20 md:w-40 md:h-40 rounded-full overflow-hidden border border-gray-200 bg-gray-100 shrink-0 lg:absolute lg:-top-20 md:absolute md:-top-20 -mt-[23px] mb-5 md:left-6 shadow-md z-10">
                 {/* <div className="w-full h-full bg-[#1a2b3c] flex items-center justify-center text-white text-4xl font-bold">
                     DW
                 </div> */}
